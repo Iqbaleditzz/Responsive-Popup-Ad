@@ -7,7 +7,7 @@ let allowedToSkip = false;
 let popupTimer;
 
 const createPopupCookie = () => {
-  let expiresDays = 30;
+  let expiresDays = 1;
   let date = new Date();
   date.setTime(date.getTime() + expiresDays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + date.toUTCString();
